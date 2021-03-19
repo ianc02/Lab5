@@ -5,6 +5,9 @@ using UnityEngine.AI;
 
 public class CollisionDetection : MonoBehaviour
 {
+
+
+    public float pauseTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,12 +22,8 @@ public class CollisionDetection : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log("://");
-        Debug.Log(tag);
-        Debug.Log(other.tag);
         if (tag.Equals("Enemy") && other.tag.Equals("LightCone"))
         {
-            Debug.Log("THis works");
             StartCoroutine(wait());
         }
     }
@@ -32,7 +31,7 @@ public class CollisionDetection : MonoBehaviour
     IEnumerator wait()
     {
         gameObject.GetComponent<NavMeshAgent>().isStopped = true;
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(pauseTime);
         gameObject.GetComponent<NavMeshAgent>().isStopped = false;
     }
 }
