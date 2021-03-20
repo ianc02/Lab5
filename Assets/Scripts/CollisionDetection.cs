@@ -10,16 +10,22 @@ public class CollisionDetection : MonoBehaviour
     public float pauseTime;
     public int health;
     private int timeSinceLastHit;
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         timeSinceLastHit = 60;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         timeSinceLastHit++;
+        if (animator.GetBool("Hit"))
+        {
+            animator.SetBool("Hit", false);
+        }
     }
 
     public void OnTriggerEnter(Collider other)
@@ -34,6 +40,13 @@ public class CollisionDetection : MonoBehaviour
             timeSinceLastHit = 0;
             health -= 10;
             Debug.Log(health);
+            animator.SetBool("Hit", true);
+            animator.SetInteger("Health", health);
+            if (health <= 0)
+            {
+                animator.SetBool("Dead", true);
+                // ADD FADE AND DESTROY OBJECT
+            }
 
         }
     }
