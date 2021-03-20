@@ -18,6 +18,5 @@ public class EnemyMove : MonoBehaviour
     {
 
         agent.destination = player.transform.position;
-        transform.LookAt(player.transform);
     }
 }
