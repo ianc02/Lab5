@@ -21,9 +21,16 @@ public class EnemyMove : MonoBehaviour
 
         agent.destination = player.transform.position;
         animator.SetFloat("Speed", GetComponent<Rigidbody>().velocity.magnitude);
-        if (transform.position.magnitude - player.transform.position.magnitude < 6)
+        if ((float)Vector3.Distance(transform.position,player.transform.position)<3.2)
         {
             animator.SetBool("Reaching", true);
+            agent.isStopped=true;
+            agent.velocity = Vector3.zero;
+        }
+        else
+        {
+            animator.SetBool("Reaching", false);
+            agent.isStopped = false;
         }
     }
 }

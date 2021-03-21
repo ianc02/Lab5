@@ -22,10 +22,6 @@ public class CollisionDetection : MonoBehaviour
     void Update()
     {
         timeSinceLastHit++;
-        if (animator.GetBool("Hit"))
-        {
-            animator.SetBool("Hit", false);
-        }
     }
 
     public void OnTriggerEnter(Collider other)
@@ -41,10 +37,15 @@ public class CollisionDetection : MonoBehaviour
             health -= 10;
             Debug.Log(health);
             animator.SetBool("Hit", true);
+            gameObject.GetComponent<NavMeshAgent>().velocity = Vector3.zero;
+            gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+            
             animator.SetInteger("Health", health);
             if (health <= 0)
             {
                 animator.SetBool("Dead", true);
+                gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+                gameObject.GetComponent<NavMeshAgent>().velocity = Vector3.zero;
                 // ADD FADE AND DESTROY OBJECT
             }
 
@@ -54,6 +55,7 @@ public class CollisionDetection : MonoBehaviour
     IEnumerator wait(float time)
     {
         gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+        gameObject.GetComponent<NavMeshAgent>().velocity = Vector3.zero;
         yield return new WaitForSeconds(time);
         gameObject.GetComponent<NavMeshAgent>().isStopped = false;
     }
