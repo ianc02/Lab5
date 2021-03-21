@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LightCone
   - Enemy
+  - LightSaber
   layers:
   - Default
   - TransparentFX
