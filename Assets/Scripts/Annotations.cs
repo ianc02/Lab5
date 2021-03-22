@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class Annotations : MonoBehaviour
 {
-    // Start is called before the first frame update
 
-    // Flashlight - RR Freelance https://poly.google.com/view/bJaT8R5j3uD
+    /*
+     * Models:
+     * Flashlight - RR Freelance https://poly.google.com/view/bJaT8R5j3uD
+     */
+
+    /*
+     * Sound FX:
+     * Flashlight click https://freesound.org/s/457463/
+     * Lightsaber ignition https://freesound.org/s/557194/
+     * Lighsaber swing https://freesound.org/s/47125/
+     */
 
     /* Music:
      * Closing In 3 https://soundimage.org/wp-content/uploads/2021/02/Closing-In-3.mp3
@@ -18,6 +27,7 @@ public class Annotations : MonoBehaviour
      * www.soundimage.org
      */
 
+    // Start is called before the first frame update
     void Start()
     {
         
