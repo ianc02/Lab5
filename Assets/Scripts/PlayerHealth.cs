@@ -21,9 +21,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void decreaseHealth(float deltaHealth)
     {
-        Debug.Log("Took damage");
         currentHealth -= deltaHealth;
-        Debug.Log(currentHealth);
         GameManager.Instance.adjustHealth(currentHealth, maxHealth);
         if (currentHealth <= 0)
         {

@@ -59,11 +59,13 @@ public class CollisionDetection : MonoBehaviour
 
     IEnumerator wait(float time)
     {
+        frozen = true;
+        Debug.Log("Waiting");
         gameObject.GetComponent<NavMeshAgent>().isStopped = true;
         gameObject.GetComponent<NavMeshAgent>().velocity = Vector3.zero;
-        frozen = true;
         yield return new WaitForSeconds(time);
         gameObject.GetComponent<NavMeshAgent>().isStopped = false;
         frozen = false;
+        Debug.Log("Done waiting");
     }
 }

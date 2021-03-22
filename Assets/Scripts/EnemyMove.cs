@@ -27,29 +27,30 @@ public class EnemyMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.destination = player.transform.position;
-        animator.SetFloat("Speed", GetComponent<Rigidbody>().velocity.magnitude);
-        if ((float)Vector3.Distance(transform.position,player.transform.position)<3.2)
+        if (!collisionDetection.isFrozen())
         {
-            if (!collisionDetection.isFrozen())
+            agent.destination = player.transform.position;
+            animator.SetFloat("Speed", GetComponent<Rigidbody>().velocity.magnitude);
+            if ((float)Vector3.Distance(transform.position, player.transform.position) < 3.2)
             {
                 animator.SetBool("Reaching", true);
-                agent.isStopped=true;
+                agent.isStopped = true;
                 agent.velocity = Vector3.zero;
                 if (secondsSinceLastDamage > secondsBetweenDamage)
                 {
                     secondsSinceLastDamage = 0;
                     playerHealth.decreaseHealth(damage);
-                } else
+                }
+                else
                 {
                     secondsSinceLastDamage += Time.deltaTime;
                 }
             }
-        }
-        else
-        {
-            animator.SetBool("Reaching", false);
-            agent.isStopped = false;
+            else
+            {
+                animator.SetBool("Reaching", false);
+                agent.isStopped = false;
+            }
         }
     }
 }
