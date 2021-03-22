@@ -29,6 +29,9 @@ public class GameManager : MonoBehaviour
     private TextMeshProUGUI dialogue;
     private Coroutine dialogueCoroutine;
 
+    public GameObject healthBar;
+    private Slider healthSlider;
+
     private void Awake()
     {
         if (Instance == null)
@@ -49,6 +52,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         dialogue = dialogueText.GetComponent<TextMeshProUGUI>();
+        healthSlider = healthBar.GetComponent<Slider>();
     }
 
     // Update is called once per frame
@@ -88,10 +92,12 @@ public class GameManager : MonoBehaviour
         StartCoroutine(LoadYourAsyncScene("LevelOne"));
         StartCoroutine(FadeBackgroundImage(new Color(1, 1, 1, 0), 2f));
         backgroundImage.SetActive(false);
+        healthBar.SetActive(true);
     }
 
     public void GameOver()
     {
+        healthBar.SetActive(false);
         StartCoroutine(LoadYourAsyncScene("TitleScreen"));
         backgroundImage.SetActive(true);
         StartCoroutine(FadeBackgroundImage(new Color(1, 1, 1, 1), 2f));
@@ -102,6 +108,7 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
+        healthBar.SetActive(false);
         StartCoroutine(LoadYourAsyncScene("TitleScreen"));
         backgroundImage.SetActive(true);
         StartCoroutine(FadeBackgroundImage(new Color(1, 1, 1, 1), 2f));
@@ -177,5 +184,10 @@ public class GameManager : MonoBehaviour
             dialogue.text += c;
             yield return new WaitForSeconds(typingSpeed);
         }
+    }
+
+    public void adjustHealth(float currentHealth, float maxHealth)
+    {
+        healthSlider.value = currentHealth / maxHealth;
     }
 }
