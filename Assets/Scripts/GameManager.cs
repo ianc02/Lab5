@@ -23,6 +23,12 @@ public class GameManager : MonoBehaviour
 
     public GameObject backgroundImage;
 
+    public GameObject dialogueBox;
+    public GameObject dialogueText;
+    public float typingSpeed;
+    private TextMeshProUGUI dialogue;
+    private Coroutine dialogueCoroutine;
+
     private void Awake()
     {
         if (Instance == null)
@@ -42,7 +48,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        dialogue = dialogueText.GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -146,6 +152,30 @@ public class GameManager : MonoBehaviour
         while (!asyncLoad.isDone)
         {
             yield return null;
+        }
+    }
+
+    public void StartDialog(string text)
+    {
+        dialogueBox.SetActive(true);
+        dialogueText.SetActive(true);
+        dialogueCoroutine = StartCoroutine(TypeText(text));
+    }
+
+    public void HideDialog()
+    {
+        dialogueBox.SetActive(false);
+        dialogueText.SetActive(false);
+        StopCoroutine(dialogueCoroutine);
+    }
+
+    IEnumerator TypeText(string text)
+    {
+        dialogue.text = "";
+        foreach (char c in text.ToCharArray())
+        {
+            dialogue.text += c;
+            yield return new WaitForSeconds(typingSpeed);
         }
     }
 }
