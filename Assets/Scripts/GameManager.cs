@@ -104,6 +104,7 @@ public class GameManager : MonoBehaviour
         titleText.SetActive(true);
         titleText.GetComponent<TextMeshProUGUI>().SetText("Game Over");
         backButton.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void WinGame()
@@ -115,6 +116,7 @@ public class GameManager : MonoBehaviour
         titleText.SetActive(true);
         titleText.GetComponent<TextMeshProUGUI>().SetText("You Win");
         backButton.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
     }
 
     private void HideMainMenuButtons()

@@ -143,9 +143,10 @@ GameObject:
   - component: {fileID: 2797196293920013584}
   - component: {fileID: 2797196293920013599}
   - component: {fileID: 2797196293920013586}
+  - component: {fileID: 6988538563690438707}
   m_Layer: 0
   m_Name: PlayerObject
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,6 +223,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightsaber: {fileID: 987915264480806261}
   flashlight: {fileID: 5177500473530069345}
+--- !u!114 &6988538563690438707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2797196293920013598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecae8a4eda5cbb4f9288226929531b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &2797196294153761598
 GameObject:
   m_ObjectHideFlags: 0

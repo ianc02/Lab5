@@ -9,19 +9,22 @@ public class CollisionDetection : MonoBehaviour
 
     public float pauseTime;
     public int health;
-    private int timeSinceLastHit;
+    public float invulnerableTime;
+    private bool frozen;
+    private float timeSinceLastHit;
     Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        timeSinceLastHit = 60;
+        timeSinceLastHit = invulnerableTime;
         animator = GetComponent<Animator>();
+        frozen = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        timeSinceLastHit++;
+        timeSinceLastHit += Time.deltaTime;
     }
 
     public void OnTriggerEnter(Collider other)
@@ -31,7 +34,7 @@ public class CollisionDetection : MonoBehaviour
             StartCoroutine(wait(pauseTime));
         }
 
-        if (tag.Equals("Enemy") && other.tag.Equals("LightSaber") && timeSinceLastHit>60)
+        if (tag.Equals("Enemy") && other.tag.Equals("LightSaber") && timeSinceLastHit>invulnerableTime)
         {
             timeSinceLastHit = 0;
             health -= 10;
@@ -52,11 +55,15 @@ public class CollisionDetection : MonoBehaviour
         }
     }
 
+    public bool isFrozen() { return frozen; }
+
     IEnumerator wait(float time)
     {
         gameObject.GetComponent<NavMeshAgent>().isStopped = true;
         gameObject.GetComponent<NavMeshAgent>().velocity = Vector3.zero;
+        frozen = true;
         yield return new WaitForSeconds(time);
         gameObject.GetComponent<NavMeshAgent>().isStopped = false;
+        frozen = false;
     }
 }
