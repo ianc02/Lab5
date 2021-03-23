@@ -13,6 +13,7 @@ public class EnemyMove : MonoBehaviour
     private float secondsSinceLastDamage;
     private PlayerHealth playerHealth;
     private CollisionDetection collisionDetection;
+    private ParticleSystem ParticleSystem;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class EnemyMove : MonoBehaviour
         animator = GetComponent<Animator>();
         playerHealth = player.GetComponent<PlayerHealth>();
         collisionDetection = GetComponent<CollisionDetection>();
+        ParticleSystem = GetComponent<ParticleSystem>();
         secondsSinceLastDamage = 0;
     }
 
@@ -33,6 +35,7 @@ public class EnemyMove : MonoBehaviour
             animator.SetFloat("Speed", GetComponent<Rigidbody>().velocity.magnitude);
             if ((float)Vector3.Distance(transform.position, player.transform.position) < 3.2)
             {
+                ParticleSystem.Play(true);
                 animator.SetBool("Reaching", true);
                 agent.isStopped = true;
                 agent.velocity = Vector3.zero;
