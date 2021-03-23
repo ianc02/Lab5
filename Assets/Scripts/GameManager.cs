@@ -25,7 +25,6 @@ public class GameManager : MonoBehaviour
 
     public GameObject dialogueBox;
     public GameObject dialogueText;
-    public float typingSpeed;
     private TextMeshProUGUI dialogue;
     private Coroutine dialogueCoroutine;
 
@@ -164,11 +163,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void StartDialog(string text)
+    public void StartDialog(string text, float typingSpeed)
     {
         dialogueBox.SetActive(true);
         dialogueText.SetActive(true);
-        dialogueCoroutine = StartCoroutine(TypeText(text));
+        dialogueCoroutine = StartCoroutine(TypeText(text, typingSpeed));
     }
 
     public void HideDialog()
@@ -178,7 +177,7 @@ public class GameManager : MonoBehaviour
         StopCoroutine(dialogueCoroutine);
     }
 
-    IEnumerator TypeText(string text)
+    IEnumerator TypeText(string text, float typingSpeed)
     {
         dialogue.text = "";
         foreach (char c in text.ToCharArray())
