@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 100
+  flashlight: {fileID: 5517469827911740379}
   playerBody: {fileID: 2797196293920013585}
 --- !u!1 &2797196293920013598
 GameObject:

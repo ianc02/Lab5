@@ -27,7 +27,7 @@ public class EnemyMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!collisionDetection.isFrozen())
+        if (!collisionDetection.isDead())
         {
             agent.destination = player.transform.position;
             animator.SetFloat("Speed", GetComponent<Rigidbody>().velocity.magnitude);
@@ -36,7 +36,7 @@ public class EnemyMove : MonoBehaviour
                 animator.SetBool("Reaching", true);
                 agent.isStopped = true;
                 agent.velocity = Vector3.zero;
-                if (secondsSinceLastDamage > secondsBetweenDamage)
+                if (secondsSinceLastDamage > secondsBetweenDamage && !collisionDetection.isFrozen())
                 {
                     secondsSinceLastDamage = 0;
                     playerHealth.decreaseHealth(damage);
@@ -51,6 +51,9 @@ public class EnemyMove : MonoBehaviour
                 animator.SetBool("Reaching", false);
                 agent.isStopped = false;
             }
+        } else
+        {
+            agent.isStopped = true;
         }
     }
 }

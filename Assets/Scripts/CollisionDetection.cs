@@ -8,6 +8,7 @@ public class CollisionDetection : MonoBehaviour
     public float pauseTime;
     public int health;
     public float invulnerableTime;
+    private bool dead;
     private bool frozen;
     private float timeSinceLastHit;
     Animator animator;
@@ -17,6 +18,7 @@ public class CollisionDetection : MonoBehaviour
         timeSinceLastHit = invulnerableTime;
         animator = GetComponent<Animator>();
         frozen = false;
+        dead = false;
     }
 
     // Update is called once per frame
@@ -48,12 +50,16 @@ public class CollisionDetection : MonoBehaviour
                 gameObject.GetComponent<NavMeshAgent>().isStopped = true;
                 gameObject.GetComponent<NavMeshAgent>().velocity = Vector3.zero;
                 // ADD FADE AND DESTROY OBJECT
+                dead = true;
+                Destroy(gameObject, 10.0f);
             }
 
         }
     }
 
     public bool isFrozen() { return frozen; }
+
+    public bool isDead() { return dead; }
 
     IEnumerator wait(float time)
     {
