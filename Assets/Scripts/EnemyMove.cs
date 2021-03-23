@@ -24,6 +24,7 @@ public class EnemyMove : MonoBehaviour
         collisionDetection = GetComponent<CollisionDetection>();
         ParticleSystem = GetComponent<ParticleSystem>();
         secondsSinceLastDamage = 0;
+        GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame
@@ -31,6 +32,10 @@ public class EnemyMove : MonoBehaviour
     {
         if (!collisionDetection.isDead())
         {
+            if (!GetComponent<AudioSource>().isPlaying)
+            {
+                GetComponent<AudioSource>().Play();
+            }
             agent.destination = player.transform.position;
             animator.SetFloat("Speed", GetComponent<Rigidbody>().velocity.magnitude);
             if ((float)Vector3.Distance(transform.position, player.transform.position) < 3.2)
@@ -57,6 +62,7 @@ public class EnemyMove : MonoBehaviour
         } else
         {
             agent.isStopped = true;
+            GetComponent<AudioSource>().Stop();
         }
     }
 }
