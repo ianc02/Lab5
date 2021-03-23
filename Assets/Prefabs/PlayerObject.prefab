@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 2797196293920013599}
   - component: {fileID: 2797196293920013586}
   - component: {fileID: 6988538563690438707}
+  - component: {fileID: 8401417745381310923}
   m_Layer: 0
   m_Name: PlayerObject
   m_TagString: Player
@@ -236,6 +237,102 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+--- !u!82 &8401417745381310923
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2797196293920013598}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f9cc3408312f2404fba98c9b5f6fb3fc, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2797196294153761598
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,9 +495,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3126734572518745905, guid: e8dafd5c3683fa94b801854dfbbc0ae9, type: 3}
+      propertyPath: m_Range
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126734573151791196, guid: e8dafd5c3683fa94b801854dfbbc0ae9, type: 3}
+      propertyPath: m_Name
+      value: bladetip
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126734573966679773, guid: e8dafd5c3683fa94b801854dfbbc0ae9, type: 3}
+      propertyPath: m_Name
+      value: blade
+      objectReference: {fileID: 0}
     - target: {fileID: 3126734574397210640, guid: e8dafd5c3683fa94b801854dfbbc0ae9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3126734574397210644, guid: e8dafd5c3683fa94b801854dfbbc0ae9, type: 3}
       propertyPath: m_RootOrder
@@ -524,6 +633,18 @@ PrefabInstance:
     - target: {fileID: 4523459191668936763, guid: b187d64c874b7684ca8cb7582eb87b26, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6316285212396690444, guid: b187d64c874b7684ca8cb7582eb87b26, type: 3}
+      propertyPath: m_Range
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6316285212396690444, guid: b187d64c874b7684ca8cb7582eb87b26, type: 3}
+      propertyPath: m_SpotAngle
+      value: 106.41276
+      objectReference: {fileID: 0}
+    - target: {fileID: 6316285212396690444, guid: b187d64c874b7684ca8cb7582eb87b26, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 90.140045
       objectReference: {fileID: 0}
     - target: {fileID: 6316285213430866860, guid: b187d64c874b7684ca8cb7582eb87b26, type: 3}
       propertyPath: m_Mesh

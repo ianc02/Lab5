@@ -16,12 +16,12 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isGrounded;
 
-    public AudioSource walkingSound;
+    private AudioSource walkingSound;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        walkingSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
