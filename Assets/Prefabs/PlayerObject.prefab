@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 100
-  flashlight: {fileID: 5517469827911740379}
+  flashlight: {fileID: 0}
   playerBody: {fileID: 2797196293920013585}
 --- !u!1 &2797196293920013598
 GameObject:
@@ -167,8 +167,8 @@ Transform:
   - {fileID: 2797196294738990789}
   - {fileID: 2797196293760254454}
   - {fileID: 2797196294153761599}
-  - {fileID: 987915264480806257}
   - {fileID: 5517469827911740379}
+  - {fileID: 987915264480806257}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -514,15 +514,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3126734574397210644, guid: e8dafd5c3683fa94b801854dfbbc0ae9, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126734574397210644, guid: e8dafd5c3683fa94b801854dfbbc0ae9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.40000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126734574397210644, guid: e8dafd5c3683fa94b801854dfbbc0ae9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.40000004
       objectReference: {fileID: 0}
     - target: {fileID: 3126734574397210644, guid: e8dafd5c3683fa94b801854dfbbc0ae9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.46
+      value: 0.46000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126734574397210644, guid: e8dafd5c3683fa94b801854dfbbc0ae9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.085
       objectReference: {fileID: 0}
     - target: {fileID: 3126734574397210644, guid: e8dafd5c3683fa94b801854dfbbc0ae9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.23
+      value: 0.23000002
       objectReference: {fileID: 0}
     - target: {fileID: 3126734574397210644, guid: e8dafd5c3683fa94b801854dfbbc0ae9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -655,13 +667,17 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6316285213430866862, guid: b187d64c874b7684ca8cb7582eb87b26, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6992839021078075563, guid: b187d64c874b7684ca8cb7582eb87b26, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7656223436345770513, guid: b187d64c874b7684ca8cb7582eb87b26, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7656223436345770513, guid: b187d64c874b7684ca8cb7582eb87b26, type: 3}
       propertyPath: m_LocalPosition.x
