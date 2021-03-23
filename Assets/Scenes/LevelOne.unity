@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -270,7 +270,7 @@ GameObject:
   m_Name: Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &104274941
@@ -326,7 +326,7 @@ GameObject:
   m_Name: Room (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &178587134
@@ -440,6 +440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndWallAddACap (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
 --- !u!1 &266631164
@@ -455,7 +459,7 @@ GameObject:
   m_Name: Room (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &266631165
@@ -704,7 +708,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-23322
+  m_Name: pb_Mesh-47584
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -929,6 +933,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndWallAddACap
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
 --- !u!1 &422223348 stripped
@@ -1148,6 +1160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndDoorFrameSingle
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7671fe4f6b8110f44b73473664215417, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7671fe4f6b8110f44b73473664215417, type: 3}
 --- !u!1001 &611019559
@@ -1216,6 +1232,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
       propertyPath: m_Name
       value: IndWallAddACap (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1290,6 +1310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndWallAddACap (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
 --- !u!1001 &650902889
@@ -1358,6 +1382,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
       propertyPath: m_Name
       value: IndWallAddACap (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
@@ -1428,6 +1456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndWallAddACap (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
 --- !u!1 &767915161 stripped
@@ -1453,6 +1485,42 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.010000003, y: 0.01, z: 0.0060000005}
   m_Center: {x: 0, y: 0.005, z: 5.820767e-10}
+--- !u!4 &768303351 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 520033852142496648, guid: 4e2c9c64f0a7c484a8d096ff53582a50, type: 3}
+  m_PrefabInstance: {fileID: 1411539133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &782152808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 782152809}
+  m_Layer: 0
+  m_Name: Enemies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &782152809
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782152808}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.444842, y: 2.9521947, z: -17.541918}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 768303351}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &820128663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1519,6 +1587,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7671fe4f6b8110f44b73473664215417, type: 3}
       propertyPath: m_Name
       value: IndDoorFrameSingle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7671fe4f6b8110f44b73473664215417, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7671fe4f6b8110f44b73473664215417, type: 3}
@@ -1630,6 +1702,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndDoorFrameSingle
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7671fe4f6b8110f44b73473664215417, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7671fe4f6b8110f44b73473664215417, type: 3}
 --- !u!1 &1056121688 stripped
@@ -1724,6 +1800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndWallAddACap (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
 --- !u!1 &1270671261 stripped
@@ -1815,6 +1895,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7671fe4f6b8110f44b73473664215417, type: 3}
       propertyPath: m_Name
       value: IndDoorFrameSingle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7671fe4f6b8110f44b73473664215417, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7671fe4f6b8110f44b73473664215417, type: 3}
@@ -1931,8 +2015,69 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndDoorFrameSingle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7671fe4f6b8110f44b73473664215417, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7671fe4f6b8110f44b73473664215417, type: 3}
+--- !u!1001 &1411539133
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 782152809}
+    m_Modifications:
+    - target: {fileID: 520033852142496648, guid: 4e2c9c64f0a7c484a8d096ff53582a50, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 520033852142496648, guid: 4e2c9c64f0a7c484a8d096ff53582a50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.3182802
+      objectReference: {fileID: 0}
+    - target: {fileID: 520033852142496648, guid: 4e2c9c64f0a7c484a8d096ff53582a50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8761377
+      objectReference: {fileID: 0}
+    - target: {fileID: 520033852142496648, guid: 4e2c9c64f0a7c484a8d096ff53582a50, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.6446495
+      objectReference: {fileID: 0}
+    - target: {fileID: 520033852142496648, guid: 4e2c9c64f0a7c484a8d096ff53582a50, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 520033852142496648, guid: 4e2c9c64f0a7c484a8d096ff53582a50, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 520033852142496648, guid: 4e2c9c64f0a7c484a8d096ff53582a50, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 520033852142496648, guid: 4e2c9c64f0a7c484a8d096ff53582a50, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 520033852142496648, guid: 4e2c9c64f0a7c484a8d096ff53582a50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 520033852142496648, guid: 4e2c9c64f0a7c484a8d096ff53582a50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 520033852142496648, guid: 4e2c9c64f0a7c484a8d096ff53582a50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 520033852142794666, guid: 4e2c9c64f0a7c484a8d096ff53582a50, type: 3}
+      propertyPath: m_Name
+      value: PT_Medieval_Plague_Doctor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2c9c64f0a7c484a8d096ff53582a50, type: 3}
 --- !u!1 &1485002659 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
@@ -2044,6 +2189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndDoorFrameSingle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7671fe4f6b8110f44b73473664215417, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7671fe4f6b8110f44b73473664215417, type: 3}
 --- !u!1001 &1650758234
@@ -2112,6 +2261,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
       propertyPath: m_Name
       value: IndWallAddACap (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
@@ -2226,6 +2379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndWallAddACap (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
 --- !u!1001 &1798566994
@@ -2300,8 +2457,12 @@ PrefabInstance:
       value: IndFloorGreyFull
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 303e7a1013b0ab642a871bc400e6f4ff, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 303e7a1013b0ab642a871bc400e6f4ff, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 303e7a1013b0ab642a871bc400e6f4ff, type: 3}
@@ -2371,6 +2532,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
       propertyPath: m_Name
       value: IndWallAddACap (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
@@ -2464,6 +2629,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndWallAddACap (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
 --- !u!1 &1989390370 stripped
@@ -2550,6 +2719,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
       propertyPath: m_Name
       value: IndWallAddACap (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
@@ -2687,6 +2860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndWallAddACap (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae3c8ef47a66d44f91faed33338a00d, type: 3}
 --- !u!1001 &731265901789539176
@@ -2774,7 +2951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 987915264480806261, guid: ac5fa692fb217b348b55d8c849c28cd6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2797196293760254455, guid: ac5fa692fb217b348b55d8c849c28cd6, type: 3}
       propertyPath: mouseSensitivity
@@ -2809,8 +2986,40 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5517469827911740379, guid: ac5fa692fb217b348b55d8c849c28cd6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.608
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517469827911740379, guid: ac5fa692fb217b348b55d8c849c28cd6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.47
+      value: 1.468
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517469827911740379, guid: ac5fa692fb217b348b55d8c849c28cd6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.848
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517469827911740379, guid: ac5fa692fb217b348b55d8c849c28cd6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.02551926
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517469827911740379, guid: ac5fa692fb217b348b55d8c849c28cd6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0004716364
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517469827911740379, guid: ac5fa692fb217b348b55d8c849c28cd6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.999522
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517469827911740379, guid: ac5fa692fb217b348b55d8c849c28cd6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.017446095
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517469827911740379, guid: ac5fa692fb217b348b55d8c849c28cd6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5517469827911740379, guid: ac5fa692fb217b348b55d8c849c28cd6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -182.925
       objectReference: {fileID: 0}
     - target: {fileID: 8175811071935580769, guid: ac5fa692fb217b348b55d8c849c28cd6, type: 3}
       propertyPath: m_LocalScale.x

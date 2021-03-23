@@ -1427,9 +1427,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e726399c5ad4a5f469dd8a1d4cfe1f02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseTime: 4
+  pauseTime: 5
   health: 50
-  invulnerableTime: 3
+  invulnerableTime: 1
 --- !u!1 &520033852142794668
 GameObject:
   m_ObjectHideFlags: 0
