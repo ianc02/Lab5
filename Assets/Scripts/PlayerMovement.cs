@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isGrounded;
 
+    public AudioSource walkingSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,5 +48,17 @@ public class PlayerMovement : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+        if (x != 0)
+        {
+            if (!walkingSound.isPlaying)
+            {
+                walkingSound.Play();
+            }
+        }
+        else
+        {
+            walkingSound.Stop();
+        }
     }
 }
