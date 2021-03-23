@@ -26,15 +26,14 @@ public class CollisionDetection : MonoBehaviour
     {
         timeSinceLastHit += Time.deltaTime;
     }
-
-    public void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (tag.Equals("Enemy") && other.tag.Equals("LightCone"))
+        if (tag.Equals("Enemy") && collision.collider.tag.Equals("LightCone"))
         {
             StartCoroutine(wait(pauseTime));
         }
 
-        if (tag.Equals("Enemy") && other.tag.Equals("LightSaber") && timeSinceLastHit>invulnerableTime)
+        if (tag.Equals("Enemy") && collision.collider.tag.Equals("LightSaber") && timeSinceLastHit > invulnerableTime)
         {
             timeSinceLastHit = 0;
             health -= 10;
@@ -42,7 +41,7 @@ public class CollisionDetection : MonoBehaviour
             animator.SetBool("Hit", true);
             gameObject.GetComponent<NavMeshAgent>().velocity = Vector3.zero;
             gameObject.GetComponent<NavMeshAgent>().isStopped = true;
-            
+
             animator.SetInteger("Health", health);
             if (health <= 0)
             {
@@ -56,7 +55,7 @@ public class CollisionDetection : MonoBehaviour
 
         }
     }
-
+   
     public bool isFrozen() { return frozen; }
 
     public bool isDead() { return dead; }
