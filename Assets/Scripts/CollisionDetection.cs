@@ -5,8 +5,6 @@ using UnityEngine.AI;
 
 public class CollisionDetection : MonoBehaviour
 {
-
-
     public float pauseTime;
     public int health;
     public float invulnerableTime;

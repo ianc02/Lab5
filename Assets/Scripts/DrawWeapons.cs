@@ -30,7 +30,8 @@ public class DrawWeapons : MonoBehaviour
             {
                 lightsaber.SetActive(false);
             }
-        } else if (Input.GetMouseButtonDown(1))
+        } 
+        if (Input.GetMouseButtonDown(1))
         {
             lightsaber.SetActive(false);
             if (!flashlight.activeSelf)
