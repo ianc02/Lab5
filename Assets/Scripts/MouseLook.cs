@@ -6,6 +6,7 @@ public class MouseLook : MonoBehaviour
 {
     private float mouseX, mouseY;
     public float mouseSensitivity = 100f;
+    public Transform flashlight;
 
     public Transform playerBody;
 
@@ -26,6 +27,7 @@ public class MouseLook : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation,-90f,90f);
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        flashlight.localRotation = Quaternion.Euler(-xRotation, 180f, 0f);
 
         playerBody.Rotate(Vector3.up * mouseX);
 

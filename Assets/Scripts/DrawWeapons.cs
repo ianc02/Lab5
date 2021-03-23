@@ -26,11 +26,12 @@ public class DrawWeapons : MonoBehaviour
             {
                 lightsaber.SetActive(true);
                 lightsaberSound.Play();
-            } else
+            }
+            else
             {
                 lightsaber.SetActive(false);
             }
-        } 
+        }
         if (Input.GetMouseButtonDown(1))
         {
             lightsaber.SetActive(false);
@@ -38,7 +39,8 @@ public class DrawWeapons : MonoBehaviour
             {
                 flashlight.SetActive(true);
                 flashlightSound.Play();
-            } else
+            }
+            else
             {
                 flashlight.SetActive(false);
             }
