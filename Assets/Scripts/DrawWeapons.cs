@@ -28,7 +28,10 @@ public class DrawWeapons : MonoBehaviour
                 lightsaber.SetActive(true);
                 lightsaberSound.Play();
             }
-            anim.Play("Lightsaber Animation", 0, 0);
+            else if(lightsaber.activeSelf)
+            {
+                anim.Play("Lightsaber Animation", 0, 0);
+            }
         }
         if (Input.GetMouseButtonDown(1))
         {
