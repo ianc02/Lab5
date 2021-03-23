@@ -15,6 +15,7 @@ public class Annotations : MonoBehaviour
      * Flashlight click https://freesound.org/s/457463/
      * Lightsaber ignition https://freesound.org/s/557194/
      * Lighsaber swing https://freesound.org/s/47125/
+     * Indoor footsteps https://freesound.org/s/366111/
      */
 
     /* Music:
