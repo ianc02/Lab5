@@ -8,7 +8,7 @@ public class DrawWeapons : MonoBehaviour
     private AudioSource lightsaberSound;
     public GameObject flashlight;
     private AudioSource flashlightSound;
-    public Animation bladeSwipe;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -28,10 +28,7 @@ public class DrawWeapons : MonoBehaviour
                 lightsaber.SetActive(true);
                 lightsaberSound.Play();
             }
-            if (lightsaber.activeSelf)
-            {
-                bladeSwipe.Play("Lightsaber Animation");
-            }
+            anim.Play("Lightsaber Animation", 0, 0);
         }
         if (Input.GetMouseButtonDown(1))
         {
