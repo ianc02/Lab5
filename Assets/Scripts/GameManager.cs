@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject healthBar;
     private Slider healthSlider;
+    private AudioSource damageAudio;
 
     private void Awake()
     {
@@ -52,6 +53,7 @@ public class GameManager : MonoBehaviour
     {
         dialogue = dialogueText.GetComponent<TextMeshProUGUI>();
         healthSlider = healthBar.GetComponent<Slider>();
+        damageAudio = healthSlider.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -190,6 +192,7 @@ public class GameManager : MonoBehaviour
     public void adjustHealth(float currentHealth, float maxHealth)
     {
         healthSlider.value = currentHealth / maxHealth;
+        damageAudio.Play();
     }
 
     public void checkEnemyCount()
