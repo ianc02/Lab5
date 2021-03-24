@@ -145,6 +145,7 @@ public class GameManager : MonoBehaviour
     public void SwitchScenes(string sceneName)
     {
         StartCoroutine(LoadYourAsyncScene(sceneName));
+        adjustHealth(100, 100);
     }
 
     IEnumerator FadeBackgroundImage(Color endValue, float duration)
