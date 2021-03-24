@@ -19,6 +19,11 @@ public class Annotations : MonoBehaviour
      * Lighsaber swing https://freesound.org/s/47125/
      * Indoor footsteps https://freesound.org/s/366111/
      */
+    /*
+     * Images
+     * Background Image - The Digital Artist - https://pixabay.com/illustrations/forest-night-trees-landscape-dark-5167158/
+     * 
+     */
 
     /* Music:
      * Closing In 3 https://soundimage.org/wp-content/uploads/2021/02/Closing-In-3.mp3
