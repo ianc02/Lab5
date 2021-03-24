@@ -6,38 +6,23 @@ public class LevelIntroDialogue : MonoBehaviour
 {
     public string signText;
     public float typingSpeed;
-    public bool singleUse; // If the sign can only be read once
     public GameObject enemies;
-    private bool read;
 
     // Start is called before the first frame update
     void Start()
     {
-        read = false;
         enemies.SetActive(false); // Keeps enemies from attacking player until done
+        GameManager.Instance.StartDialog(signText, typingSpeed);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player") && (!singleUse || !read))
-        {
-            GameManager.Instance.StartDialog(signText, typingSpeed);
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
         {
             GameManager.Instance.HideDialog();
-            read = true;
             enemies.SetActive(true);
+            Destroy(gameObject);
         }
     }
 }

@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &8539408785465317360
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987915264480806261}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f77864b203d32a446ab74af0704d970f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2797196293760254453
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightsaber: {fileID: 987915264480806261}
   flashlight: {fileID: 5177500473530069345}
+  anim: {fileID: 8539408785465317360}
 --- !u!114 &6988538563690438707
 MonoBehaviour:
   m_ObjectHideFlags: 0
