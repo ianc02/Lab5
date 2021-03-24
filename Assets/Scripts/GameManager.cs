@@ -77,10 +77,15 @@ public class GameManager : MonoBehaviour
         HideMainMenuButtons();
         creditsText.SetActive(true);
         backButton.SetActive(true);
+        titleText.SetActive(false);
     }
 
     public void BackToMainMenu()
     {
+        if (!titleText.activeSelf)
+        {
+            titleText.SetActive(true);
+        }
         creditsText.SetActive(false);
         instructionText.SetActive(false);
         backButton.SetActive(false);
