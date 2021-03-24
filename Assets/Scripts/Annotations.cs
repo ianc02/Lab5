@@ -18,6 +18,7 @@ public class Annotations : MonoBehaviour
      * Lightsaber ignition https://freesound.org/s/557194/
      * Lighsaber swing https://freesound.org/s/47125/
      * Indoor footsteps https://freesound.org/s/366111/
+     * Damage taken https://freesound.org/s/404109/
      */
     /*
      * Images
