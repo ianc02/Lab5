@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        checkEnemyCount();
+        
     }
 
     public void ShowInstructions()
@@ -196,7 +196,7 @@ public class GameManager : MonoBehaviour
     {
         Scene current = SceneManager.GetActiveScene();
         if ((current.name.Equals("LevelOne")) || (current.name.Equals("LevelTwo")) || (current.name.Equals("LevelThree"))){
-            if (GameObject.Find("Enemies").transform.childCount == 0)
+            if (GameObject.Find("Enemies").transform.childCount <= 1)
                 
             {
                 if (current.name.Equals("LevelOne"))
@@ -209,8 +209,7 @@ public class GameManager : MonoBehaviour
                 }
                 if (current.name.Equals("LevelThree"))
                 {
-                    //LoadYourAsyncScene("LevelTwo");
-                    //Win Scene here
+                    WinGame();
                 }
             }
         }
