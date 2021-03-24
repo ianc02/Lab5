@@ -1373,10 +1373,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 'Game designed by Brandon Casey, Sammy Gaskins, Ian Campbell, Cooper Grimes,
+    and Trey Hoopchuck.
+
+    Sounds designed by Rudmer_Rotteveel, pip_, gyzhor, and
+    dkiller2204.
+
+    Music designed by Eric Matyas.
+
+    Models and images by RR
+    Freelance, Polytope Studio, Martin Calviello, and The Digital Artist.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e9b4ceb94d81a3d43999b6c11109f620, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -2917259974250316435, guid: e9b4ceb94d81a3d43999b6c11109f620, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1466,8 +1475,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.4661, y: -14.25}
-  m_SizeDelta: {x: 595.85, y: 209.5}
+  m_AnchoredPosition: {x: 5.8001, y: -13.252}
+  m_SizeDelta: {x: 612.3823, y: 271.4963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1197158674
 GameObject:
@@ -1867,7 +1876,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -134}
+  m_AnchoredPosition: {x: 5.8001, y: -164.00015}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1431073438
@@ -2060,7 +2069,7 @@ MonoBehaviour:
   m_text: Back To Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e9b4ceb94d81a3d43999b6c11109f620, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -2917259974250316435, guid: e9b4ceb94d81a3d43999b6c11109f620, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2368,7 +2377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 128.03}
+  m_AnchoredPosition: {x: 0, y: 167}
   m_SizeDelta: {x: 320.7965, y: 58.0532}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1952889102
