@@ -9,6 +9,7 @@ public class DrawWeapons : MonoBehaviour
     public GameObject flashlight;
     private AudioSource flashlightSound;
     public Animator anim;
+    public GameObject AudioManager;
 
     // Start is called before the first frame update
     void Start()
