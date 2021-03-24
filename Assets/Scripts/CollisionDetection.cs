@@ -50,6 +50,7 @@ public class CollisionDetection : MonoBehaviour
                 gameObject.GetComponent<NavMeshAgent>().velocity = Vector3.zero;
                 // ADD FADE AND DESTROY OBJECT
                 dead = true;
+                GameManager.Instance.checkEnemyCount();
                 Destroy(gameObject, 10.0f);
             }
 
