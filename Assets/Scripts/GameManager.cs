@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        checkEnemyCount();
     }
 
     public void ShowInstructions()
@@ -191,4 +191,29 @@ public class GameManager : MonoBehaviour
     {
         healthSlider.value = currentHealth / maxHealth;
     }
+
+    public void checkEnemyCount()
+    {
+        Scene current = SceneManager.GetActiveScene();
+        if ((current.name.Equals("LevelOne")) || (current.name.Equals("LevelTwo")) || (current.name.Equals("LevelThree"))){
+            if (GameObject.Find("Enemies").transform.childCount == 0)
+                
+            {
+                if (current.name.Equals("LevelOne"))
+                {
+                    StartCoroutine(LoadYourAsyncScene("LevelTwo"));
+                }
+                if (current.name.Equals("LevelTwo"))
+                {
+                    StartCoroutine(LoadYourAsyncScene("LevelThree"));
+                }
+                if (current.name.Equals("LevelThree"))
+                {
+                    //LoadYourAsyncScene("LevelTwo");
+                    //Win Scene here
+                }
+            }
+        }
+    }
+
 }
