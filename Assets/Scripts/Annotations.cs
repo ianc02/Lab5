@@ -8,6 +8,8 @@ public class Annotations : MonoBehaviour
     /*
      * Models:
      * Flashlight - RR Freelance https://poly.google.com/view/bJaT8R5j3uD
+     * LightSaber - Martin Calviello https://poly.google.com/view/5KfCxHvAVcJ
+     * Plague Doctor, Trees, Rocks - Polytope Studio https://assetstore.unity.com/packages/3d/characters/humanoids/fantasy/lowpoly-medieval-plague-doctor-free-pack-176809
      */
 
     /*
