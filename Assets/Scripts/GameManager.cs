@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     public GameObject instructionText;
     public GameObject creditsText;
 
+    public GameObject AudioManager;
+
     public GameObject backgroundImage;
 
     public GameObject dialogueBox;
@@ -40,6 +42,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             DontDestroyOnLoad(canvas);
             DontDestroyOnLoad(events);
+            DontDestroyOnLoad(AudioManager);
         } else
         {
             Destroy(canvas);

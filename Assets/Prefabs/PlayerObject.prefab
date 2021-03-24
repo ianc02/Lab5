@@ -245,6 +245,7 @@ MonoBehaviour:
   lightsaber: {fileID: 987915264480806261}
   flashlight: {fileID: 5177500473530069345}
   anim: {fileID: 8539408785465317360}
+  AudioManager: {fileID: 0}
 --- !u!114 &6988538563690438707
 MonoBehaviour:
   m_ObjectHideFlags: 0
